@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110d">
+  <title>proOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="boot" id="boot">
+    <div class="logo">pro<span>OS</span></div>
+    <p>Initializing proOS...</p>
+    <div class="loader"></div>
+  </div>
+
+  <main class="desktop">
+    <header class="topbar">
+      <div class="brand">proOS <span>WEB EDITION</span></div>
+      <div id="clock"></div>
+      <button id="settingsButton" aria-label="Open settings">⚙</button>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">PERSONAL COMPUTING ENVIRONMENT</div>
+      <h1>Welcome to<br><em>your workspace.</em></h1>
+      <p>A fresh space for creativity, productivity and ideas.</p>
+      <button class="primary" data-app="files">Open workspace ↗</button>
+    </section>
+
+    <section class="apps">
+      <h2>APPLICATIONS</h2>
+      <div class="app-grid">
+        <button class="app" data-app="files">
+          <span class="app-icon gold">▤</span>Files
+        </button>
+        <button class="app" data-app="terminal">
+          <span class="app-icon green">›_</span>Terminal
+        </button>
+        <button class="app" data-app="notes">
+          <span class="app-icon purple">✎</span>Notes
+        </button>
+        <button class="app" data-app="about">
+          <span class="app-icon blue">i</span>About proOS
+        </button>
+      </div>
+    </section>
+
+    <section class="system">
+      <div>
+        <span>ENVIRONMENT</span>
+        <strong>Browser desktop</strong>
+      </div>
+      <div>
+        <span>VERSION</span>
+        <strong>proOS 0.1</strong>
+      </div>
+      <div>
+        <span>STATUS</span>
+        <strong class="online">● Operational</strong>
+      </div>
+    </section>
+
+    <div id="windowLayer"></div>
+
+    <nav class="dock" aria-label="Application dock">
+      <button class="dock-logo" id="home">p</button>
+      <button data-app="files" aria-label="Files">▤</button>
+      <button data-app="terminal" aria-label="Terminal">›_</button>
+      <button data-app="notes" aria-label="Notes">✎</button>
+      <button data-app="about" aria-label="About">i</button>
+    </nav>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
